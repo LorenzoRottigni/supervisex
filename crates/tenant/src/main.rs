@@ -11,7 +11,7 @@ async fn main() -> Result<()> {
     let capture = Capture::new(0)?;
     let mut streamer = Streamer::new(capture);
 
-    // streamer.connect().await;
+    streamer.connect().await;
 
     streamer.stream().await;
 
